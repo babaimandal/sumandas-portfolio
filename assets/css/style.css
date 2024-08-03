@@ -20,7 +20,6 @@ body{
     margin: 0;
     font-family: "Jost", sans-serif;
     font-family: "Open Sans", sans-serif;
-    overflow-x: hidden;
 }
 a{
     display: inline-block;

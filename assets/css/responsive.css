@@ -326,11 +326,12 @@
     .all-rights-reserve-block p {
         font-size: 13px;
     }
-    .contact-form-wrapper {
-        padding-block-end: 0px;
-    }
     .about-section-wrapper .bottom-section .hire-me::before {
         width: 68px;
         height: 112px;
+    }
+    .contact-form-wrapper {
+        
+        padding-block-end: 20px;
     }
 }
