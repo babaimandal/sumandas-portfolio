@@ -1,0 +1,326 @@
+@media only screen and (max-width: 1400px){
+    .header-wrapper header nav ul li a {
+        font-size: 17px;
+        color: #fff;
+        font-weight: 500;
+    }
+    .header-wrapper header nav ul {
+        gap: 39px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .header-wrapper header nav ul li a {
+        font-size: 15px;
+    }
+    .header-wrapper header nav ul {
+        gap: 27px;
+    }
+    .banner-content-wrapper .banner-content .text-block h1 {
+        font-size: 70px;
+    }
+    .banner-content-wrapper .banner-content .text-block h2{
+        font-size: 21px;
+        margin-block-start: 25px;
+        margin-block-end: 29px;
+    }
+    .banner-content-wrapper .banner-content .text-block p {
+        font-size: 18px;
+    }
+    .banner-content-wrapper .banner-content .image-block {
+        width: 71%;
+    }
+    .banner-content-wrapper {
+        padding-block-start: 80px;
+        padding-block-end: 100px;
+    }
+    .about-section-wrapper .bottom-section {
+        padding-block-start: 35px;
+        padding-block-end: 76px;
+    }
+    .about-section-wrapper .top-section .efficiency-block {
+        padding-block-end: 50px;
+    }
+    .about-section-wrapper .bottom-section .hire-me .text-block h2 {
+        font-size: 39px;
+    }
+    .about-section-wrapper .bottom-section .hire-me .text-block p {
+        padding-block-start: 25px;
+        font-size: 15px;
+    }
+    .about-section-wrapper .bottom-section .hire-me .image-block {
+        width: 76%;
+    }
+    .about-section-wrapper .bottom-section .hire-me::after{
+        top: 262px;
+    }
+    .portfolio-wrapper .title h2 {
+        font-size: 39px;
+        padding-block-start: 2px;
+    }
+    .portfolio-wrapper .title p{
+        font-size: 18px;
+    }
+    .skills-wrapper .skills-content-block h2{
+        font-size: 39px;
+    }
+    .skills-wrapper .skills-content-block p {
+        font-size: 16px;
+        padding-block-start: 26px;
+    }
+    .skills-wrapper .image-block {
+        width: 80%;
+        margin-block-start: 27px;
+    }
+    .skills-wrapper {
+        padding-block-end: 90px;
+    }
+    .contact-form-wrapper .title h2 {
+        font-size: 39px;
+    }
+    title {
+        font-size: 18px;
+    }
+    .banner-content-wrapper .banner-content .text-block {
+        text-align: center;
+        margin-block-end: 45px;
+    }
+    .banner-content-wrapper .banner-content .about-me-sec {
+        justify-content: center;
+    }
+    .about-section-wrapper .awesome-idea {
+        margin-block-start: 70px;
+    }
+    .about-section-wrapper .bottom-section .hire-me .text-block {
+        max-width: 100%;
+        text-align: center;
+        margin-block-start: 25px;
+    }
+    .about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec {
+        margin-inline: auto;
+    }
+    .skills-wrapper .skills-content-block {
+        max-width: 100%;
+        text-align: center;
+    }
+    .skills-wrapper .skills-bar-wrapper {
+        width: max-content;
+        margin-inline: auto;
+    }
+    .skills-wrapper .skills-content-block {
+        max-width: 100%;
+        text-align: center;
+    }
+    .skills-wrapper .skills-bar-wrapper {
+        width: max-content;
+        margin-inline: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .skills-wrapper .skills-bar-wrapper .wrapper {
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+    }
+    .contact-form-wrapper .form-block .address .rt-block span {
+        font-size: 20px;
+    }
+    .contact-form-wrapper .form-block .email{
+        margin-block: 25px
+    }
+    .contact-form-wrapper .form-block .email .rt-block span {
+        font-size: 20px;
+        
+    }
+    .contact-form-wrapper .form-block .phone .rt-block span {
+        font-size: 20px;
+    }
+    .contact-form-wrapper .form-block form {
+        max-width: 100%;
+        margin-block: 35px;
+    }
+    .contact-form-wrapper .form-block .contact-wrapper{
+        width: 100%;
+    }
+    .contact-form-wrapper .form-block .contact-wrapper .box {
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background: #00000005;
+        backdrop-filter: blur(10px);
+        padding-block: 17px;
+        padding-inline: 23px;
+        box-shadow: rgb(12 9 9 / 13%) 0px 2px 8px 0px;
+    }
+    .contact-form-wrapper .form-block .contact-wrapper .box .rt-block span {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-section-wrapper .high-quality {
+        margin-block-start: 70px;
+    }
+    .header-wrapper .mobile-width {
+        width: 50%;
+        margin-block-start: 20px;
+    }
+    .header-wrapper nav {
+        margin-block-start: 18px;
+        background: #22222259;
+        padding-inline: 44px;
+        padding-block: 4px;
+        border-radius: 6px;
+    }
+    .stellarnav.mobile{
+        align-items: center;
+        display: flex;
+    }
+    .header-wrapper header .download-cv a {
+        border-radius: 3px;
+
+    }
+    .stellarnav.mobile>ul { 
+        top: 140px;
+    }
+
+    .menu-toggle {
+        background-image: url('../images/hambarger-white.png');
+        background-repeat: no-repeat;
+        background-size: 101% 73%;
+        background-position: center;
+    }
+}
+@media only screen and (max-width: 499px){
+    .portfolio-wrapper .portfolio-image-gallery .button-group button {
+        background-color: #00000008;
+        padding-block: 11px;
+        border-radius: 23px;
+        backdrop-filter: blur(10px);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .portfolio-wrapper .portfolio-image-gallery .button-group{
+        flex-direction: column;
+        gap: 18px;
+    }
+    .portfolio-wrapper .portfolio-image-gallery .button-group button:active{
+        transform: scale(0.96);
+    }
+    .header-wrapper header .download-cv a {
+        padding-inline: 22px;
+        font-size: 13px;
+    }
+    .banner-content-wrapper {
+        padding-block-start: 45px;
+        padding-block-end: 73px;
+    }
+    .banner-content-wrapper .banner-content .text-block h4 {
+        font-size: 33px;
+    }
+    .banner-content-wrapper .banner-content .text-block h1 {
+        font-size: 42px;
+    }
+    .banner-content-wrapper .banner-content .text-block h2 {
+        font-size: 19px;
+        margin-block-start: 14px;
+        margin-block-end: 19px;
+    }
+    .banner-content-wrapper .banner-content .text-block p {
+        font-size: 15px;
+    }
+    .banner-content-wrapper .banner-content .about-me-sec .rt-block a {
+        font-size: 13px;
+    }
+    .banner-content-wrapper .banner-content .about-me-sec {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px !important;
+    }
+    .banner-content-wrapper .banner-content .about-me-sec .lt-block{
+        justify-content: center;
+    }
+    .about-section-wrapper {
+        padding-block-start: 105px;
+    }
+    .about-section-wrapper .top-section .efficiency-block .box .title h2 {
+        padding-block-end: 9px;
+        font-size: 22px;
+    }
+    .about-section-wrapper .top-section .efficiency-block .box .title p {
+        font-size: 13px;
+    }
+    .portfolio-wrapper .title h2 {
+        font-size: 28px;
+        padding-block-end: 12px;
+    }
+    .portfolio-wrapper .title p {
+        font-size: 15px;
+    }
+    .about-section-wrapper .bottom-section .hire-me .text-block h2 {
+        font-size: 28px;
+    }
+    .about-section-wrapper .bottom-section .hire-me .text-block p {
+        padding-block-start: 17px;
+        font-size: 14px;
+    }
+    .about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec a {
+        font-size: 13px;
+    }
+    .about-section-wrapper .bottom-section {
+        padding-block-start: 24px;
+        padding-block-end: 61px;
+    }
+    .skills-wrapper .skills-content-block h2 {
+        font-size: 28px;
+        padding-block-start: 6px;
+    }
+    .skills-wrapper .skills-content-block p {
+        font-size: 16px;
+        padding-block-start: 17px;
+        font-size: 14px;
+    }
+    .contact-form-wrapper .form-block::before {
+        width: 104px;
+        height: 82px;
+        right: 0;
+        top: -261px;
+        z-index: -1;
+        animation: horizontal-shaking-form-block-before 24s linear infinite alternate;
+    }
+    .contact-form-wrapper .form-block::after {
+        width: 150px;
+        height: 150px;
+        top: -59px;
+        z-index: -1;
+    }
+    .contact-form-wrapper .title h2 {
+        font-size: 28px;
+    }
+    .contact-form-wrapper .form-block .contact-wrapper .box .rt-block h5 {
+        font-size: 22px;
+    }
+    .contact-form-wrapper .form-block .contact-wrapper .box .rt-block span {
+        font-size: 14px;
+    }
+    .contact-form-wrapper .form-block .email .rt-block span{
+        font-size: 18px !important;
+    }
+    .contact-form-wrapper .form-block .phone .rt-block span{
+        font-size: 18px !important;
+    }
+    .contact-form-wrapper .form-block form .submit-button input {
+        font-size: 16px;
+    }
+    .all-rights-reserve-block {
+        padding-block: 12px;
+    }
+    .all-rights-reserve-block p {
+        font-size: 13px;
+    }
+    .contact-form-wrapper {
+        padding-block-end: 0px;
+    }
+    .about-section-wrapper .bottom-section .hire-me::before {
+        width: 68px;
+        height: 112px;
+    }
+}

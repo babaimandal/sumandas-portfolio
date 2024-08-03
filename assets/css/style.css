@@ -1,0 +1,1091 @@
+:root {
+    --button-bg-color: #FF2828;
+    --primary-font: "Jost", sans-serif;
+    --secondary-font:"Open Sans", sans-serif;
+    --primary-text-color: #fff;
+    --secondary-text-color: #FF2828;
+    --supporting-text-color:#C7C7C7;
+    --backgound-color:#2B2D33;
+    --submit-button-backgound-color: #F75023;
+  }
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* ================== ==================== ==================== =============== */
+/* Stellar Nav */
+.stellarnav>ul>li>a {
+    padding: 0;
+}
+.stellarnav ul ul {
+    top: auto;
+    width: 220px;
+    position: absolute;
+    z-index: 9900;
+    text-align: left;
+    display: none;
+    background: #ffffff08;
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(0 0 0 / 6%) 0px 4px 12px;
+}
+.menu-toggle {
+    background-image: url('../images/hambarger-white.png');
+    background-repeat: no-repeat;
+    background-size: 30px 26px;
+}
+.stellarnav .menu-toggle span.bars {
+    display: none !important;
+}
+.stellarnav.mobile>ul{
+    display: block;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+}
+.stellarnav.mobile ul {
+    background: rgb(0 0 0 / 64%);
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+/* Stellar Nav */
+
+
+/* ================== Banner ===================== */
+.banner-wrapper{
+    width: 100%;
+    height: 100%;
+    
+}
+.banner-wrapper .banner-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../images/banner-hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-wrapper .banner-image img{
+    width: 100%;
+    height: 100%;
+}
+.header-wrapper {
+    padding-block-start: 28px;
+}
+.header-wrapper header .logo-block a img{
+    
+}
+.header-wrapper header .logo-block a{
+    position: relative;
+    width: max-content;
+}
+.header-wrapper header .logo-block a::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/logo-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 38px;
+    left: -38px;
+    top: -6px;
+}
+.header-wrapper header nav ul{
+    gap: 44px;
+}
+.header-wrapper header nav ul li a{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.header-wrapper header nav ul li a:hover{
+    color: var(--button-bg-color);
+    transition: 0.5s ease-in-out;
+}
+.header-wrapper header .download-cv {
+    position: relative;
+    overflow: hidden;
+}
+.header-wrapper header .download-cv:active{
+    transform: scale(0.96);
+    cursor: pointer;
+}
+.header-wrapper header .download-cv:hover .hover-element{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+.header-wrapper header .download-cv .hover-element {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 100%;
+    background-color: #ff0000;
+    /* backdrop-filter: blur(10px); */
+    border-radius: 35px;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.header-wrapper header .download-cv .hover-element i {
+    color: #fff;
+    font-size: 25px;
+}
+/* ============= Sahke Animation ========== */
+
+/* .header-wrapper header .download-cv .hover-element:hover i{
+    animation: horizontal-shaking 0.2s linear infinite alternate;
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(3px) }
+    50% { transform: translateX(-3px) }
+    75% { transform: translateX(3px) }
+    100% { transform: translateX(0) }
+} */
+        
+/* ============= Sahke Animation ========== */
+.header-wrapper header .download-cv a {
+    background-color: var(--button-bg-color);
+    color: var(--primary-text-color);
+    padding-inline: 22px;
+    padding-block: 9px;
+    border-radius: 35px;
+    font-weight: 400;
+}
+.banner-content-wrapper {
+    padding-block-start: 111px;
+    padding-block-end: 140px;
+}
+.banner-content-wrapper .banner-content .text-block h4{
+    color: var(--secondary-text-color);
+    font-size: 45px;
+    font-weight: 400;
+}
+.banner-content-wrapper .banner-content .text-block h1{
+    font-size: 85px;
+    color: var(--primary-text-color);
+    font-weight: 900;
+}
+.banner-content-wrapper .banner-content .text-block h1 span{
+    color: var(--primary-text-color);
+    font-weight: 100;
+}
+.banner-content-wrapper .banner-content .text-block h2 {
+    color: var(--primary-text-color);
+    font-size: 28px;
+    font-weight: 400;
+    margin-block-start: 42px;
+    margin-block-end: 34px;
+}
+.banner-content-wrapper .banner-content .text-block h2 span:nth-child(1){
+    color: #1CBE59;
+}
+.banner-content-wrapper .banner-content .text-block h2 span:nth-child(2){
+    color: #F0C45C;
+}
+.banner-content-wrapper .banner-content .text-block p{
+    color: var(--primary-text-color);
+    font-size: 21px;
+    font-weight: 400;
+}
+.banner-content-wrapper .banner-content .about-me-sec {
+    gap: 51px;
+    margin-block-start: 30px;
+}
+.banner-content-wrapper .banner-content .about-me-sec .rt-block{
+    position: relative;
+}
+.banner-content-wrapper .banner-content .about-me-sec .rt-block:hover .hover-el{
+    transform: scale(1);
+}
+.banner-content-wrapper .banner-content .about-me-sec .rt-block a {
+    background-color: var(--button-bg-color);
+    color: var(--primary-text-color);
+    padding-inline: 28px;
+    padding-block: 9px;
+    border-radius: 35px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+    font-size: 20px;
+}
+.banner-content-wrapper .banner-content .about-me-sec .rt-block:active{
+    transform: scale(0.96);
+}
+.banner-content-wrapper .banner-content .about-me-sec .lt-block a{
+    color: #fff;
+    font-size: 20px;
+}
+.banner-content-wrapper .banner-content .about-me-sec .rt-block .hover-el {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00;
+    backdrop-filter: blur(10px);
+    border-radius: 35px;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: scale(0);
+}
+.banner-content-wrapper .banner-content .about-me-sec .rt-block .hover-el i{
+    color: #fff;
+    font-size: 25px;
+}
+.banner-content-wrapper .banner-content .about-me-sec .lt-block a:hover i{
+    background: -webkit-linear-gradient(#246dff, #06deff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease-in-out;
+}
+.banner-content-wrapper .banner-content .image-block{
+    width: 60%;
+    position: relative;
+}
+.banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(1) {
+    position: absolute;
+    bottom: 0;
+    right: 196px;
+}
+.banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(2) {
+    position: absolute;
+    top: 101px;
+    right: 0;
+}
+.banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(3) {
+    position: absolute;
+    top: 115px;
+    left: -63px;
+}
+/* ============= Sahke Animation ========== */
+.banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(2) {
+   
+    & {
+      -webkit-animation-name:              shake;    
+      -webkit-animation-duration:          35s;
+      -webkit-animation-iteration-count:   infinite;
+      -webkit-animation-timing-function:   linear;
+      -webkit-transform-origin:            50% 100%;
+    }
+  }
+  @-webkit-keyframes shake {
+    0%  { -webkit-transform:     translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform:     translate(-1px, -2px) rotate(-2deg); }
+    20% { -webkit-transform:     translate(-3px, 0px) rotate(3deg); }
+    30% { -webkit-transform:     translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform:     translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform:     translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform:     translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform:     translate(2px, 1px) rotate(-2deg); }
+    80% { -webkit-transform:     translate(-1px, -1px) rotate(4deg); }
+    90% { -webkit-transform:     translate(2px, 2px) rotate(0deg); }
+    100%{ -webkit-transform:     translate(1px, -2px) rotate(-1deg); }
+   }
+.banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(1){
+    animation: shake1 8s linear infinite alternate;
+}
+@keyframes shake1 {
+    0% {
+      transform: translate(3px, 0);
+    }
+    50% {
+      transform: translate(-13px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+.banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(3){
+    animation: shake2 8s linear infinite alternate;
+}
+@keyframes shake2 {
+    0% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(31px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+/* ============= Sahke Animation ========== */
+
+/* ================== About Section ===================== */
+.about-section-wrapper{
+    background-color: var(--backgound-color);
+    padding-block-start: 150px;
+}
+.about-section-wrapper .top-section .efficiency-block{
+    padding-block-end: 100px;
+}
+.about-section-wrapper .top-section .efficiency-block .box{
+    max-width: 359px;
+    margin-inline: auto;
+}
+.about-section-wrapper .top-section .efficiency-block .box .icon {
+    max-width: max-content;
+    position: relative;
+    margin-inline: auto;
+}
+.about-section-wrapper .top-section .efficiency-block .box .pixel-perfect .icon::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/pixel-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 119px;
+    height: 120px;
+    left: -28px;
+    top: -30px;
+    animation: circle-spin 15s linear infinite;
+}
+.about-section-wrapper .top-section .efficiency-block .box .high-quality .icon::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/brush-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 119px;
+    height: 120px;
+    left: -28px;
+    top: -30px;
+    animation: circle-spin 15s linear infinite;
+}
+.about-section-wrapper .top-section .efficiency-block .box .awesome-idea .icon::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/light-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 119px;
+    height: 120px;
+    left: -28px;
+    top: -30px;
+    animation: circle-spin 15s linear infinite;
+}
+/* =========== Animation Circle MOve =========== */
+@keyframes circle-move {
+    0% {
+      transform: rotate(0deg);
+    }
+    70% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes circle-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes flicker {
+    0% {
+      opacity: 0.85;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* =========== Animation Circle MOve =========== */
+ 
+  .about-section-wrapper .top-section .efficiency-block .box .title h2 {
+    color: var(--primary-text-color);
+    font-size: 28px;
+    font-family: var(--primary-font);
+    margin: 0;
+    padding-block-start: 41px;
+    padding-block-end: 16px;
+}
+.about-section-wrapper .top-section .efficiency-block .box .title p{
+    color: var(--supporting-text-color);
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    margin: 0;
+    font-weight: 400;
+}
+
+.about-section-wrapper .bottom-section{
+    padding-block-start: 100px;
+    padding-block-end: 100px;
+}
+.about-section-wrapper .bottom-section .hire-me{
+    position: relative;
+}
+.about-section-wrapper .bottom-section .hire-me::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/design-06.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 122px;
+    height: 204px;
+    left: 0;
+    top: -34px; 
+    animation: horizontal-shaking-hire-me 11s linear infinite alternate;
+
+}
+@keyframes horizontal-shaking-hire-me {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}
+.about-section-wrapper .bottom-section .hire-me::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/design-05.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 262px;
+    height: 120px;
+    right: 0;
+    top: 342px;
+    animation: horizontal-shaking-hire-me-after 7s linear infinite alternate;
+}
+@keyframes horizontal-shaking-hire-me-after {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(3px) }
+    50% { transform: translateY(-3px) }
+    75% { transform: translateY(3px) }
+    100% { transform: translateY(0) }
+}
+
+.about-section-wrapper .bottom-section .hire-me .image-block{
+    width: 66%;
+}
+.about-section-wrapper .bottom-section .hire-me .text-block {
+    max-width: 558px;
+    position: relative;
+}
+.about-section-wrapper .bottom-section .hire-me .text-block h4 {
+    color: var(--secondary-text-color);
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    margin: 0;
+}
+.about-section-wrapper .bottom-section .hire-me .text-block h2 {
+    color: var(--primary-text-color);
+    font-size: 48px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    margin: 0;
+}
+.about-section-wrapper .bottom-section .hire-me .text-block p {
+    color: var(--supporting-text-color);
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    margin: 0;
+    font-weight: 400;
+    padding-block-start: 37px;
+    padding-block-end: 25px;
+    line-height: 27px;
+}
+.about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec a {
+    background-color: var(--button-bg-color);
+    color: var(--primary-text-color);
+    padding-inline: 30px;
+    padding-block: 9px;
+    border-radius: 35px;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec {
+    position: relative;
+    overflow: hidden;
+    width: max-content;
+}
+.about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec:active{
+    transform: scale(0.96);
+}
+.about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec .hover-el:active{
+    cursor: pointer;
+}
+
+.about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec:hover .hover-el{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+.about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec .hover-el {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 100%;
+    background-color: #FF2828;
+    border-radius: 35px;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec .hover-el i {
+    color: #fff;
+    font-size: 25px;
+}
+/* ============= Sahke Animation ========== */
+
+.about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec .hover-el:hover i{
+    animation: horizontal-shaking 0.2s linear infinite alternate;
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(3px) }
+    50% { transform: translateX(-3px) }
+    75% { transform: translateX(3px) }
+    100% { transform: translateX(0) }
+}
+        
+/* ============= Sahke Animation ========== */
+.about-section-wrapper .bottom-section .hire-me .text-block .about-me-sec a:active{
+    transform: scale(0.96);
+}
+/* ================== Portfolio Section ===================== */
+.portfolio-wrapper{
+    background-color: var(--backgound-color);
+    padding-block-end: 100px;
+    position: relative;
+}
+.portfolio-wrapper::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/design-04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 172px;
+    height: 212px;
+    left: 0;
+    top: -9px;
+    animation: horizontal-shaking-portfolio 16s linear infinite alternate;
+}
+@keyframes horizontal-shaking-portfolio {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}
+.portfolio-wrapper .title {
+    max-width: 605px;
+    margin-inline: auto;
+}
+.portfolio-wrapper .title h4{
+    color: var(--secondary-text-color);
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    margin: 0;
+}
+.portfolio-wrapper .title h2 {
+    color: var(--primary-text-color);
+    font-size: 48px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    margin: 0;
+    padding-block-end: 15px;
+    padding-block-start: 5px;
+}
+.portfolio-wrapper .title p {
+    color: var(--supporting-text-color);
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    margin: 0;
+    font-weight: 400;
+    line-height: 27px;
+}
+.portfolio-wrapper .portfolio-image-gallery {
+    padding-block-start: 50px;
+    position: relative;
+}
+.portfolio-wrapper .portfolio-image-gallery::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/brush-design-el.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    right: 0;
+    top: 94%;
+    animation: portfolio-image-gallery 9s linear infinite alternate;
+}
+@keyframes portfolio-image-gallery {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}
+.portfolio-wrapper .portfolio-image-gallery .top-block{
+    width: 100%;
+    height: 380px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.portfolio-wrapper .portfolio-image-gallery .top-block a{
+    width: 100%;
+    height: 100%;
+}
+.portfolio-wrapper .portfolio-image-gallery .top-block a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.portfolio-wrapper .portfolio-image-gallery .bottom-block{
+    width: 100%;
+    height: 190px;
+    background-color: #00d9ff;
+    border-radius: 5px;
+}
+.portfolio-wrapper .portfolio-image-gallery .bottom-block a{
+    width: 100%;
+    height: 100%;
+}
+.portfolio-wrapper .portfolio-image-gallery .bottom-block a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.portfolio-wrapper .portfolio-image-gallery .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-block-end: 38px;
+}
+.portfolio-wrapper .portfolio-image-gallery .button-group button {
+    background-color: transparent;
+    border: none;
+    color: var(--supporting-text-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+/* ================== Skills Section ===================== */
+.skills-wrapper {
+    background-color: var(--backgound-color);
+    padding-block-end: 100px;
+}
+.skills-wrapper .skills-content-block {
+    max-width: 546px;
+}
+.skills-wrapper .skills-content-block h4{
+    color: var(--secondary-text-color);
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    margin: 0;
+}
+.skills-wrapper .skills-content-block h2{
+    color: var(--primary-text-color);
+    font-size: 48px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    margin: 0;
+}
+.skills-wrapper .skills-content-block p {
+    color: var(--supporting-text-color);
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    margin: 0;
+    font-weight: 400;
+    padding-block-start: 31px;
+    padding-block-end: 25px;
+    line-height: 27px;
+}
+.skills-wrapper .skills-bar-wrapper{
+
+}
+
+
+
+/* ============================= */
+.skills-wrapper .skills-bar-wrapper .wrapper{
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+}
+.skills-wrapper .skills-bar-wrapper .skill {
+    margin-bottom: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+.skills-wrapper .skills-bar-wrapper .skill > p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: var(--primary-font);
+    margin: 0;
+}
+.skills-wrapper .skills-bar-wrapper .skill:before {
+    width: 100%;
+    height: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+    border-radius: 35px;
+}
+.skills-wrapper .skills-bar-wrapper .skill-bar {
+    width: 100%;
+    height: 5px;
+    background:#f4392f;
+    display: block;
+    position: relative;
+    border-radius: 35px;
+}
+
+/* SKILL 1 */
+.skills-wrapper .skills-bar-wrapper .skill1{
+    width: 95%;
+}
+.skills-wrapper .skills-bar-wrapper .skill-bar span{
+    position: absolute;
+    top: -30px;
+    padding: 0;
+    font-size: 18px;
+    padding: 3px 0;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+.skills-wrapper .skills-bar-wrapper .skill-bar {
+    position: relative;
+        
+}
+
+.skills-wrapper .skills-bar-wrapper .skill1 .skill-count1 {
+    right: 0;
+    font-size: 17px;
+}
+/* SKILL 2 */
+.skills-wrapper .skills-bar-wrapper .skill2{
+    width: 85%;
+    background-color: #1CBE59;
+}
+
+.skills-wrapper .skills-bar-wrapper .skill2 .skill-count2 {
+    right: 0;
+    font-size: 17px;
+}
+/* SKILL 3 */
+.skills-wrapper .skills-bar-wrapper .skill3{
+    width: 45%;
+    background-color: #8067F0;
+}
+.skills-wrapper .skills-bar-wrapper .skill3 .skill-count3 {
+    right: 0;
+    font-size: 17px;
+}
+
+
+.skills-wrapper .image-block{
+    width: 85%;
+}
+.skills-wrapper .image-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================== Contact Me Section ===================== */
+.contact-form-wrapper {
+    background-color: var(--backgound-color);
+    padding-block-end: 40px;
+}
+.contact-form-wrapper .title{
+    padding-block-end: 65px;
+}
+.contact-form-wrapper .title h4{
+    color: var(--secondary-text-color);
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    margin: 0;
+}
+.contact-form-wrapper .title h2 {
+    color: var(--primary-text-color);
+    font-size: 48px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    margin: 0;
+    padding-block-end: 3px;
+    padding-block-start: 5px;
+}
+.contact-form-wrapper .title p{
+    color: var(--supporting-text-color);
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    margin: 0;
+    font-weight: 400;
+    line-height: 27px;
+}
+.contact-form-wrapper .form-block{
+    position: relative;
+    z-index: 111;
+}
+.contact-form-wrapper .form-block::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/pngtre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 360px;
+    height: 360px;
+    opacity: 0.3;
+    top: -160px;
+    z-index: -1;
+    animation: circle-move-form-block-after 100s linear infinite;
+}
+/* =========== Animation Circle MOve =========== */
+@keyframes circle-move-form-block-after {
+    0% {
+      transform: rotate(0deg);
+    }
+    70% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes circle-move-form-block-after {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes flicker {
+    0% {
+      opacity: 0.85;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* =========== Animation Circle MOve =========== */
+  .contact-form-wrapper .form-block::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/design-el6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 291px;
+    height: 220px;
+    right: 0;
+    top: -160px;
+    z-index: -1;
+    animation: horizontal-shaking-form-block-before 24s linear infinite alternate;
+}
+@keyframes horizontal-shaking-form-block-before {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}
+.contact-form-wrapper .form-block .contact-wrapper .box{
+    max-width: 390px;
+}
+.contact-form-wrapper .form-block .contact-wrapper .box .lt-block a {
+    background-color: #FEDFD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.contact-form-wrapper .form-block .contact-wrapper .box .lt-block a i {
+    color: var(--secondary-text-color);
+    font-size: 27px;
+}
+.contact-form-wrapper .form-block .contact-wrapper .email .lt-block a i{
+    color: #1CBE59;
+}
+.contact-form-wrapper .form-block .contact-wrapper .phone .lt-block a i{
+    color: #8067F0;
+}
+.contact-form-wrapper .form-block .contact-wrapper .box .rt-block h5{
+    font-family: var(--primary-font);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--primary-text-color);
+}
+.contact-form-wrapper .form-block .contact-wrapper .box .rt-block span {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--supporting-text-color);
+}
+.contact-form-wrapper .form-block form{
+    max-width: 620px;
+}
+.contact-form-wrapper .form-block form .box {
+    width: 49%;
+    height: 56px;
+    margin-block-end: 10px;
+    border-radius: 10px;
+}
+.contact-form-wrapper .form-block form .box input{
+    background-color: transparent;
+    border: 1px solid var(--supporting-text-color);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    padding-inline-start: 15px;
+    
+}
+.contact-form-wrapper .form-block form .box input::placeholder{
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    color: #C7C7C7;
+}
+.contact-form-wrapper .form-block form .big-box{
+    width: 100%;
+    height: 260px;
+    margin-block-end: 5px;
+    border-radius: 10px;
+}
+.contact-form-wrapper .form-block form .big-box textarea {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: var(--primary-text-color);
+    font-family: var(--secondary-font);
+    border: 1px solid var(--supporting-text-color);
+    padding-inline-start: 15px;
+    padding-block-start: 13px;
+    outline: none;
+}
+.contact-form-wrapper .form-block form .big-box textarea::placeholder{
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    color: #C7C7C7;
+}
+.contact-form-wrapper .form-block form .submit-button {
+    width: 100%;
+    margin-block-start: 25px;
+}
+.contact-form-wrapper .form-block form .submit-button input {
+    background-color: var(--submit-button-backgound-color);
+    border: none;
+    outline: none;
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    padding-block: 11px;
+    border-radius: 36px;
+}
+.contact-form-wrapper .form-block form .submit-button input:active{
+    transform: scale(0.96);
+}
+
+/* ================== All Right Reserv ===================== */
+.all-rights-reserve-block {
+    background-color: var(--backgound-color);
+    padding-block: 35px;
+    border-top: 1px solid #414248;
+}
+.all-rights-reserve-block p{
+    margin: 0;
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
