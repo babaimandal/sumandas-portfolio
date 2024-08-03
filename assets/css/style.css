@@ -979,7 +979,21 @@ a{
 }
 .contact-form-wrapper .form-block .contact-wrapper .box .rt-block span {
     font-family: var(--primary-font);
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--supporting-text-color);
+}
+.contact-form-wrapper .form-block .contact-wrapper .email .rt-block a {
+   font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--supporting-text-color);
+}
+.contact-form-wrapper .form-block .contact-wrapper .phone .rt-block a {
+   font-family: var(--primary-font);
+    font-size: 18px;
     font-weight: 400;
     margin: 0;
     color: var(--supporting-text-color);

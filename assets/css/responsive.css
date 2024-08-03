@@ -127,20 +127,24 @@
     .contact-form-wrapper .form-block .email{
         margin-block: 25px
     }
-    .contact-form-wrapper .form-block .email .rt-block span {
+    .contact-form-wrapper .form-block .email .rt-block a {
         font-size: 20px;
         
     }
-    .contact-form-wrapper .form-block .phone .rt-block span {
+    .contact-form-wrapper .form-block .phone .rt-block a {
         font-size: 20px;
     }
     .contact-form-wrapper .form-block form {
         max-width: 100%;
-        margin-block: 35px;
     }
     .contact-form-wrapper .form-block .contact-wrapper{
         width: 100%;
     }
+    .contact-form-wrapper .form-block .contact-wrapper .box .rt-block span {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 991px){
     .contact-form-wrapper .form-block .contact-wrapper .box {
         max-width: 100%;
         flex-direction: column;
@@ -151,11 +155,15 @@
         padding-inline: 23px;
         box-shadow: rgb(12 9 9 / 13%) 0px 2px 8px 0px;
     }
+    .contact-form-wrapper .form-block form {
+        margin-block-start: 31px;
+    }
     .contact-form-wrapper .form-block .contact-wrapper .box .rt-block span {
-        font-size: 18px;
+        font-size: 15px;
+        display: inline-block;
+        width: 85%;
     }
 }
-
 @media only screen and (max-width: 768px){
     .about-section-wrapper .high-quality {
         margin-block-start: 70px;
@@ -177,17 +185,19 @@
     }
     .header-wrapper header .download-cv a {
         border-radius: 3px;
-
     }
     .stellarnav.mobile>ul { 
         top: 140px;
+        z-index: 9999;
     }
-
     .menu-toggle {
         background-image: url('../images/hambarger-white.png');
         background-repeat: no-repeat;
         background-size: 101% 73%;
         background-position: center;
+    }
+    .contact-form-wrapper .form-block form .box {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 499px){
@@ -301,10 +311,10 @@
     .contact-form-wrapper .form-block .contact-wrapper .box .rt-block span {
         font-size: 14px;
     }
-    .contact-form-wrapper .form-block .email .rt-block span{
+    .contact-form-wrapper .form-block .email .rt-block a{
         font-size: 18px !important;
     }
-    .contact-form-wrapper .form-block .phone .rt-block span{
+    .contact-form-wrapper .form-block .phone .rt-block a{
         font-size: 18px !important;
     }
     .contact-form-wrapper .form-block form .submit-button input {
