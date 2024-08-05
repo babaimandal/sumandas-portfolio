@@ -170,7 +170,7 @@
     }
     .header-wrapper .mobile-width {
         width: 50%;
-        margin-block-start: 20px;
+        margin-block-start: 12px;
     }
     .header-wrapper nav {
         margin-block-start: 18px;
@@ -263,7 +263,10 @@
         padding-block-end: 12px;
     }
     .portfolio-wrapper .title p {
+        line-height: 24px;
         font-size: 15px;
+        max-width: 81%;
+        margin-inline: auto;
     }
     .about-section-wrapper .bottom-section .hire-me .text-block h2 {
         font-size: 28px;
@@ -331,7 +334,39 @@
         height: 112px;
     }
     .contact-form-wrapper {
-        
         padding-block-end: 20px;
+    }
+    .banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(3) img {
+        width: 85%;
+    }
+    .banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(1) img {
+        width: 85%;
+    }
+    .banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(2) img {
+        width: 85%;
+    }
+     /*
+    .banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(1) {
+        bottom: 24px;
+    } */
+    .banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(1) {
+        bottom: -20px;
+        right: 90px;
+    }
+    .banner-content-wrapper .banner-content .image-block:nth-child(1) .icon-element .icon:nth-child(3) {
+        left: -28px;
+    }
+    .portfolio-wrapper::before {
+        width: 90px;
+        height: 108px;
+        left: 19px;
+        top: -27px;
+    }
+    .contact-form-wrapper .title p {
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 76%;
+        margin-inline: auto;
+        padding-block-start: 5px;
     }
 }

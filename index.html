@@ -349,22 +349,54 @@
                         </div>    
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <form action="" class="d-flex flex-wrap justify-content-between">
+                        <!-- <form action="https://api.web3forms.com/submit" class="d-flex flex-wrap justify-content-between"  method="POST">
+                            <input type="hidden" name="access_key" value="ab7931f5-8c2b-41d6-8e22-f318ab9366a7">
                             <div class="box">
-                                <input type="text" placeholder="Your Name" required>
+                                <input type="text" placeholder="Your Name" autocomplete="on" required>
                             </div>
                             <div class="box">
-                                <input type="email" placeholder="Your Email" required>
+                                <input type="email" placeholder="Your Email" autocomplete="on" required>
                             </div>
                             <div class="box">
-                                <input type="tel" placeholder="Your Phone" required>
+                                <input type="tel" placeholder="Your Phone" autocomplete="on" required>
                             </div>
                             <div class="box">
-                                <input type="text" placeholder="Subject" required>
+                                <input type="text" placeholder="Subject" autocomplete="on" required>
                             </div>
                             <div class="big-box">
                                 <textarea name=""  placeholder="Write Your Message Here..." ></textarea>
                             </div>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <div class="submit-button">
+                                <input type="submit" value="Submit Now">
+                            </div>
+                        </form> -->
+                        <form action="https://api.web3forms.com/submit" class="d-flex flex-wrap justify-content-between" method="POST">
+                            <form>
+
+                            <input type="hidden" name="access_key" value="ab7931f5-8c2b-41d6-8e22-f318ab9366a7">
+                        
+                            <div class="box">
+                                <input type="text" name="firstname" placeholder="Your Name" autocomplete="on" required>
+                            </div>
+                            <br>
+                            <div class="box">
+                                <input type="email" name="email" placeholder="Your Email" autocomplete="on" required>
+                            </div>
+                            <div class="box">
+                                <input type="tel" name="phone" placeholder="Your Phone" autocomplete="on" required>
+                            </div>
+                            <br>
+                            <div class="box">
+                                <input type="text" name="subject" placeholder="Subject" autocomplete="on" required>
+                            </div>
+                            <br>
+                            <div class="big-box">
+                                <textarea name="" name="message" placeholder="Write Your Message Here..." ></textarea>
+                            </div>
+                            <div class="h-captcha" data-captcha="true"></div>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <br>
                             <div class="submit-button">
                                 <input type="submit" value="Submit Now">
                             </div>
@@ -391,6 +423,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <!-- Isotope js cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<!-- w3 Form -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
 
 <!-- Isotope Handler-->
  <script>
